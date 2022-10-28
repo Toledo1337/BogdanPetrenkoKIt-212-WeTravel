@@ -1,0 +1,17 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="Main settings">
+        <Preference
+            android:icon="@drawable/ic_password_24px"
+            android:key="change_password"
+            android:title="Password change"
+            android:summary="Tap to change"
+            />
+        <Preference
+            android:icon="@drawable/ic_logout_24px"
+            android:key="exit"
+            android:summary="Clean all user data and exit"
+            android:title="Exit" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

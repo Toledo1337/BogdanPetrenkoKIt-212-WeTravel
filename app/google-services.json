@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "864214867922",
+    "firebase_url": "https://wetravel-1591a.firebaseio.com",
+    "project_id": "wetravel-1591a",
+    "storage_bucket": "wetravel-1591a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864214867922:android:6a3119c8f31818028f720b",
+        "android_client_info": {
+          "package_name": "ua.pkk.wetravel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864214867922-tb8cmbfcp3e20r2frhlk03llcss1a3so.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ua.pkk.wetravel",
+            "certificate_hash": "ad97ba4b250ef5f906deb7fea80d3042aa6624ab"
+          }
+        },
+        {
+          "client_id": "864214867922-ac6a6ti3so1ju3u171k5mpgde0o40p0j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaASVyJwslJxGIZBFVM1-8h4dn47UL96E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864214867922-ac6a6ti3so1ju3u171k5mpgde0o40p0j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

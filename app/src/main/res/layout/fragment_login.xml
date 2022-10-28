@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/enter_phone_number"
+            android:textColorHint="@color/primaryColor"
+            app:boxStrokeColor="@color/primaryDarkColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mail_ed_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textColorPrimary"
+                android:fontFamily="@font/rubik"
+                android:lines="1"
+                android:textColor="@color/primaryDarkColor"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/verification_code_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="@string/enter_password"
+            android:textColorHint="@color/primaryColor"
+            app:boxStrokeColor="@color/primaryDarkColor"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passw_ed_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/textColorPrimary"
+                android:fontFamily="@font/rubik"
+                android:lines="1"
+                android:textColor="@color/primaryDarkColor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/restore_password_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="21dp"
+            android:paddingBottom="20dp"
+            android:text="@string/restore_password" />
+
+        <Button
+            android:id="@+id/accept_btn_log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/rubik"
+            android:text="@string/accept"
+            android:textColor="@color/textColorPrimary" />
+
+    </LinearLayout>
+</layout>

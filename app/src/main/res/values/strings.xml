@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">WeTravel</string>
+    <string name="enter_phone_number">Enter phone email</string>
+    <string name="enter_password">Enter password</string>
+    <string name="enter_password_again">Repeat password</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="isnt_valid_mail">Mail isn\'t valid</string>
+    <string name="empty_password">Please enter a password</string>
+    <string name="password_dont_match">Password don\`t match</string>
+    <string name="restore_password">Forgot password? Restore it.</string>
+    <string name="accept">Login</string>
+    <string name="load_video">Load video</string>
+    <string name="addMarker">Please put the marker somewhere</string>
+    <string name="select_video">Select video</string>
+    <string name="explain_what_todo_header">Explain what TODO + header</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="show_map">Show all video on map</string>
+    <string name="log_out">Log out</string>
+    <string name="delete_video">Delete video</string>
+    <string name="my_account">Account</string>
+    <string name="about_me">About me:</string>
+    <string name="for_changing_hold_down_element">For changing hold down element</string>
+    <string name="save">save</string>
+    <string name="cancel">cancel</string>
+    <string name="make_changes_and_save">Make changes and save</string>
+    <string name="uploaded_by">Uploaded by:</string>
+    <string name="enter_video_name_here">Enter video name here</string>
+    <string name="you_earn_a_notification_after_success_uploading">You earn a notification after success uploading.</string>
+    <string name="notification_chanel_name">Uploading video</string>
+    <string name="notification_chanel_description">Shows the success of the video upload.</string>
+    <string name="video_upload">Video upload</string>
+    <string name="upload_in_process">Upload in progress</string>
+    <string name="upload_complete">Upload in complete</string>
+    <string name="wrong_pas">Wrong password</string>
+    <string name="wrong_mail">Wrong mail</string>
+    <string name="your_video">Your video</string>
+    <string name="storage_permission">Without read storage permission app won\'t work</string>
+    <string name="error_try_again">Error, please try again</string>
+    <string name="success_registration">Success registration</string>
+    <string name="please_wait">Please wait</string>
+    <string name="show_video_on_map">Show all video on map</string>
+    <string name="upload_video">Upload video</string>
+    <string name="my_video">My video</string>
+    <string name="settings">Settings</string>
+    <string name="add">add</string>
+    <string name="write_comment">Write Comment</string>
+    <string name="enter_another_name">Enter another name</string>
+    <string name="description">Description</string>
+    <string name="find">Find</string>
+    <string name="enter_video_tags">Enter video tags</string>
+    <string name="show_all">Show all</string>
+    <string name="close">close</string>
+    <string-array name="filters">
+        <item>Find by video name</item>
+        <item>Find by Tags</item>
+    </string-array>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="submit">submit</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="repeat_new_password">Repeat new password</string>
+</resources>

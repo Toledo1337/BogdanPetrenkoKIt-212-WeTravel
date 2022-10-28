@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/accountTab"
+        android:enabled="true"
+        android:title="@string/my_account" />
+    <item
+        android:id="@+id/videoUploadTab"
+        android:enabled="true"
+        android:title="@string/video_upload" />
+    <item
+        android:id="@+id/myVideoTab"
+        android:enabled="true"
+        android:title="@string/my_video" />
+    <item
+        android:id="@+id/allVideoTab"
+        android:enabled="true"
+        android:title="@string/show_video_on_map" />
+    <item
+        android:id="@+id/settingsTab"
+        android:enabled="true"
+        android:icon="@drawable/exo_ic_settings"
+        android:title="@string/settings" />
+</menu>

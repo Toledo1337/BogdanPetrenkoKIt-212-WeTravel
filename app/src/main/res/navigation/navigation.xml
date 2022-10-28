@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/loginPageFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ua.pkk.wetravel.fragments.main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_loadVideomapsFragment"
+            app:destination="@id/loadVideoMapsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_showVideoFragment"
+            app:destination="@id/showVideoFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_videoMapsFragment"
+            app:destination="@id/videoMapsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_userAccountFragment"
+            app:destination="@id/userAccountFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadVideoMapsFragment"
+        android:name="ua.pkk.wetravel.fragments.loadVideoMap.LoadVideoMapFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_load_video_maps">
+        <action
+            android:id="@+id/action_loadVideoMapsFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/loadVideoMapsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPageFragment"
+        android:name="ua.pkk.wetravel.fragments.loginPage.LoginPageFragment"
+        android:label="LoginPageFragment">
+        <action
+            android:id="@+id/action_loginPageFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/loginPageFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginPageFragment_self"
+            app:destination="@id/loginPageFragment"
+            app:popUpTo="@id/loginPageFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_loginPageFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/showVideoFragment"
+        android:name="ua.pkk.wetravel.fragments.allUserVideo.ShowVideoFragment"
+        android:label="fragment_show_video"
+        tools:layout="@layout/fragment_show_video">
+        <action
+            android:id="@+id/action_showVideoFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoMapsFragment"
+        android:name="ua.pkk.wetravel.fragments.showVideoOnMap.VideoMapsFragment"
+        android:label="fragment_video_maps"
+        tools:layout="@layout/fragment_video_maps">
+        <action
+            android:id="@+id/action_videoMapsFragment_to_videoFragment"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="ua.pkk.wetravel.fragments.videoItem.VideoFragment"
+        android:label="VideoFragment">
+        <argument
+            android:name="video"
+            app:argType="ua.pkk.wetravel.utils.Video" />
+        <argument
+            android:name="source_key"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_videoFragment_to_userAccountFragment"
+            app:destination="@id/userAccountFragment" />
+        <action
+            android:id="@+id/action_videoFragment_to_showVideoFragment"
+            app:destination="@id/showVideoFragment"
+            app:popUpTo="@id/showVideoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/userAccountFragment"
+        android:name="ua.pkk.wetravel.fragments.userAccount.UserAccountFragment"
+        android:label="UserAccountFragment">
+        <argument
+            android:name="user_img"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="user_name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="user_info"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="status"
+            app:argType="string"
+            app:nullable="true"/>
+        <argument
+            android:name="source_key"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_userAccountFragment_to_editUserAccountFragment"
+            app:destination="@id/editUserAccountFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="ua.pkk.wetravel.fragments.settings.SettingsFragment"
+        android:label="fragment_settings">
+        <action
+            android:id="@+id/action_settingsFragment_to_loginPageFragment"
+            app:destination="@id/loginPageFragment"
+            app:popUpTo="@id/settingsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/editUserAccountFragment"
+        android:name="ua.pkk.wetravel.fragments.editUserAccount.EditUserAccountFragment"
+        android:label="EditUserAccountFragment">
+        <argument
+            android:name="user_img"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="user_name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="user_info"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="status"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_editUserAccountFragment_to_userAccountFragment"
+            app:destination="@id/userAccountFragment"
+            app:popUpTo="@id/userAccountFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="ua.pkk.wetravel.fragments.main.MainFragmentNewDesign"
+        android:label="fragment_main2"
+        tools:layout="@layout/fragment_main2" >
+        <action
+            android:id="@+id/action_mainFragment2_to_loginPageFragment"
+            app:destination="@id/loginPageFragment" />
+    </fragment>
+</navigation>
